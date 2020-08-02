@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  UntitledChatApp
 //
-//  Created by Herbert Dodge on 7/28/20.
-//  Copyright © 2020 Herbert Dodge. All rights reserved.
+//  Created by Herbie on 3/27/20.
+//  Copyright © 2020 Herbie Dodge. All rights reserved.
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 

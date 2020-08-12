@@ -19,12 +19,10 @@ class ProfileController: UITableViewController {
     //MARK: - Properties
     
     weak var delegate: ProfileControllerDelegate?
-    
     private var user: User? {
         didSet { headerView.user = user }
     }
     private lazy var headerView = ProfileHeader(frame: .init(x: 0, y: 0, width: view.frame.width, height: 380))
-    
     private let footerview = ProfileFooter()
     
     //MARK: - Lifecycle

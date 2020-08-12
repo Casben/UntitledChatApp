@@ -76,7 +76,6 @@ class ProfileHeader: UIView {
     }
     
     
-        
     //MARK: - Helpers
     
     func populateUserData() {

@@ -15,6 +15,7 @@ protocol NewMessageControllerDelegate: class {
 }
 
 class NewMessageController: UITableViewController {
+    
     //MARK: - Properties
     
     private var users = [User]()

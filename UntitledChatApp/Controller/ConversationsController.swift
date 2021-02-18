@@ -10,7 +10,9 @@ import UIKit
 import Firebase
 
 private let reuseIdentifier = "ConversationsCell"
+
 class ConversationsController: UIViewController {
+    
     //MARK: - Properties
     
     private var conversations = [Conversation]()
@@ -28,6 +30,7 @@ class ConversationsController: UIViewController {
     }()
     
     //MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -42,6 +45,7 @@ class ConversationsController: UIViewController {
     
     
     //MARK: - Selectors
+    
     @objc func showProfile(){
         let controller = ProfileController(style: .insetGrouped)
         controller.delegate = self

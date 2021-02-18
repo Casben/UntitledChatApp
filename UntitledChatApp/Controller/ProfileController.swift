@@ -39,9 +39,9 @@ class ProfileController: UITableViewController {
         navigationController?.navigationBar.barStyle = .black
     }
     
-    //MARK: - Selectors
     
     //MARK: - API
+    
     func fetchUser() {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         showLoader(false)
@@ -53,6 +53,7 @@ class ProfileController: UITableViewController {
 
     
     //MARK: - Helpers
+    
     func configureUI() {
         tableView.tableHeaderView = headerView
         headerView.delegate = self
